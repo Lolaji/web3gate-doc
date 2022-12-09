@@ -13,7 +13,7 @@
     
     
       
-        <title>Software Setup - Web3Gate Doc</title>
+        <title>Installation - Web3Gate Doc</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#software-setup" class="md-skip">
+        <a href="#installation" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Software Setup
+              Installation
             
           </span>
         </div>
@@ -192,66 +192,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../change-log/" class="md-nav__link">
-        Change Log
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../error-troubleshoot/" class="md-nav__link">
-        Errors & Troubleshooting
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
-        Installation
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../payment/" class="md-nav__link">
-        Payment Process
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -264,12 +204,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Software Setup
+          Installation
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Software Setup
+        Installation
       </a>
       
         
@@ -288,16 +228,118 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blockchain-network" class="md-nav__link">
-    Blockchain Network
+  <a href="#downloaded-file-layout" class="md-nav__link">
+    Downloaded File layout
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#staking-pool-contract-deployment" class="md-nav__link">
-    Staking Pool contract deployment
+  <a href="#installing-packages-setup" class="md-nav__link">
+    Installing Packages &amp; Setup
   </a>
+  
+    <nav class="md-nav" aria-label="Installing Packages &amp; Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-requirements" class="md-nav__link">
+    Software Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-packages" class="md-nav__link">
+    Install packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-environment-file" class="md-nav__link">
+    Create environment file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-app-key" class="md-nav__link">
+    Generate app key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-environment-variable" class="md-nav__link">
+    Configure the environment variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    Migration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seeding" class="md-nav__link">
+    Seeding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-app" class="md-nav__link">
+    Run the app
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend-setup" class="md-nav__link">
+    Frontend Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Frontend Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-node-packages" class="md-nav__link">
+    Installing the node packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compile-your-project" class="md-nav__link">
+    Compile your project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -317,8 +359,68 @@
   
   
     <li class="md-nav__item">
-      <a href="../source-credit/" class="md-nav__link">
+      <a href="../2_setup/" class="md-nav__link">
+        Setup
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3_payment/" class="md-nav__link">
+        Payment Process
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_source-credit/" class="md-nav__link">
         Dependencies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../change-log/" class="md-nav__link">
+        Change Log
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../error-troubleshoot/" class="md-nav__link">
+        Errors & Troubleshooting
       </a>
     </li>
   
@@ -351,16 +453,118 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#blockchain-network" class="md-nav__link">
-    Blockchain Network
+  <a href="#downloaded-file-layout" class="md-nav__link">
+    Downloaded File layout
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#staking-pool-contract-deployment" class="md-nav__link">
-    Staking Pool contract deployment
+  <a href="#installing-packages-setup" class="md-nav__link">
+    Installing Packages &amp; Setup
   </a>
+  
+    <nav class="md-nav" aria-label="Installing Packages &amp; Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#software-requirements" class="md-nav__link">
+    Software Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-packages" class="md-nav__link">
+    Install packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-environment-file" class="md-nav__link">
+    Create environment file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate-app-key" class="md-nav__link">
+    Generate app key
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configure-the-environment-variable" class="md-nav__link">
+    Configure the environment variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database" class="md-nav__link">
+    Database
+  </a>
+  
+    <nav class="md-nav" aria-label="Database">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#migration" class="md-nav__link">
+    Migration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seeding" class="md-nav__link">
+    Seeding
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-app" class="md-nav__link">
+    Run the app
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend-setup" class="md-nav__link">
+    Frontend Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Frontend Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-the-node-packages" class="md-nav__link">
+    Installing the node packages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compile-your-project" class="md-nav__link">
+    Compile your project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -379,38 +583,94 @@
                   
 
 
-<h1 id="software-setup">Software Setup</h1>
-<p>In this section, we will explain what you need to setup your applicaiton</p>
-<h2 id="blockchain-network">Blockchain Network</h2>
-<p>Setting up blockchain networks means you are adding a network RPC configuration which is going to be available for users to select from.</p>
-<blockquote>
-<p><strong>Note</strong>: this software currently supports EVM based blockchain and to intereact with Bitcoin you will have to get a <a href="https://blockchain.com/explorer/api">blockchain API Key</a></p>
-</blockquote>
-<p>We have created a database seeder for some network that you can just seed into your database to safe you some time. To seed this networks, run the following command:</p>
-<pre><code> php artisan db:seed --class=NetworkSeeder
+<h1 id="installation">Installation</h1>
+<p>To install the Web3Gate application you will need install the following software on your system</p>
+<ol>
+<li><a href="https://getcomposer.org/">Composer</a></li>
+</ol>
+<h2 id="downloaded-file-layout">Downloaded File layout</h2>
+<p>This is the layout of your downloaded zip file after decompressed it.</p>
+<pre><code>web3gate/
+    source-code/     # contain the source code
+    Documentation/   # documentation folder
 </code></pre>
+<h2 id="installing-packages-setup">Installing Packages &amp; Setup</h2>
+<h3 id="software-requirements">Software Requirements</h3>
+<pre><code> - PHP 8.0.1 or later
+ - OpenSSL PHP Extension
+ - PDO PHP Extension
+ - Mbstring PHP Extension
+ - Tokenizer PHP Extension
+ - XML PHP Extension
+ - Ctype PHP Extension
+ - JSON PHP Extension
+ - BCMath PHP Extension
+ - FileInfo PHP Extension
+</code></pre>
+<h3 id="install-packages">Install packages</h3>
+<p>Open the source-code folder with your terminal and run the following command to installed all the packages needed by this application. Make sure you are in the root directory of the source-code folder.</p>
 <blockquote>
-<p><strong>Note</strong>: if you set your APP_ENV enviroment variable to local or development it will seed a testnet blockchain networks into your database, however, setting it to production will seed mainnet blockchain networks into your database. Except for Bitcoin which will always seed mainnet.</p>
+<p><strong>Note:</strong> you will need to install composer to follow this step.</p>
 </blockquote>
-<p>You can also add blockchain manually:</p>
-<ol>
-<li>Login and navigate to the admin panel</li>
-<li>On the sidebar, click blockchain &gt; networks</li>
-<li>There you can perform CRUD operation on the blockchain network.</li>
-</ol>
-<blockquote>
-<p><strong>Note</strong>: Admin user only have access to this module</p>
-</blockquote>
-<h2 id="staking-pool-contract-deployment">Staking Pool contract deployment</h2>
-<p>For users to be able to launch a staking pool for their token, you will need to deploy the staking pool smart contract to the blockchain network you have added.</p>
-<p>To deploy the smart contract:</p>
-<ol>
-<li>Login and navigate to the admin panel</li>
-<li>On the sidebar, click blockchain &gt; smart contracts</li>
-<li>In the contract page click Add contract button</li>
-<li>In the open  modal connect to your web3 wallet, select the network you are deploying to, select contract type</li>
-<li>And click the Deploy button</li>
-</ol>
+<pre><code> $ composer install
+</code></pre>
+<h3 id="create-environment-file">Create environment file</h3>
+<p>Now that you have install all the packages needed, create a .env file at the root of the application and copy the content of the .env.example into .env you have just create. You can use the following command to acheive this:</p>
+<pre><code> $ cp .env.example .env
+</code></pre>
+<h3 id="generate-app-key">Generate app key</h3>
+<p>Run the following command to generate app key:</p>
+<pre><code> $ php artisan key:generate
+</code></pre>
+<h3 id="configure-the-environment-variable">Configure the environment variable</h3>
+<p>After the .env file has been created, open the .env file and change the value of the following variables</p>
+<pre><code> APP_NAME=you-app-name-here
+ APP_ENV=local                           # development or production
+ APP_DEBUG=false                         # true if you want to a display error message
+ APP_URL=https://example.com             # the domain of the server you upload this to (http://localhost if running on your computer)
+
+ DB_CONNECTION=mysql                     # pgsql for postgreSQL database
+ DB_HOST=127.0.0.1
+ DB_PORT=3306                            # 5432 for postgreSQL
+ DB_DATABASE=database-you-created
+ DB_USERNAME=database-username
+ DB_PASSWORD=database-password
+</code></pre>
+<p>To be able to use bitcoin network in your application, you will need to get an API key from <a href="https://blockchain.com/explorer/api">blockchain.com</a> and set it in your .env file</p>
+<pre><code> BLOCKCHAIN_API_KEY=your-blockchain-api-key-here
+</code></pre>
+<h3 id="database">Database</h3>
+<h4 id="migration">Migration</h4>
+<p>After setting up the .env file, now run the following command to setup the database.</p>
+<pre><code> $ php artisan migrate
+</code></pre>
+<h4 id="seeding">Seeding</h4>
+<p>Make sure to set the enviroment variable for the super admin as this will be the top level admin that has all the previledges, and you will use it for login.</p>
+<pre><code> ADMIN_USERNAME=your-username
+ ADMIN_EMAIL=your-email
+ ADMIN_PASSWORD=your-password
+</code></pre>
+<p>then run:</p>
+<pre><code> $ php artisan db:seed
+</code></pre>
+<h3 id="run-the-app">Run the app</h3>
+<p>You can now run the app by running the following command:</p>
+<pre><code> $ php artisan serve
+</code></pre>
+<h2 id="frontend-setup">Frontend Setup</h2>
+<p>Web3Gate uses <a href="https://vuejs.org/">Vue.js</a> for it frontend and if you would like to make changes to your frontend, you must have <a href="https://nodejs.org/">node.js</a> or <a href="https://yarnpkg.com/">yarn</a> installed on your computer.</p>
+<h3 id="installing-the-node-packages">Installing the node packages</h3>
+<p>Now you can install the node packages using the following command:</p>
+<pre><code> $ npm install 
+ // or
+ $ yarn install
+</code></pre>
+<h3 id="compile-your-project">Compile your project</h3>
+<p>To compile your project use the following command:</p>
+<pre><code> $ npm run dev
+ // or
+ $ yarn dev
+</code></pre>
 
 
 
@@ -431,7 +691,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../payment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Payment Process" rel="prev">
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -440,20 +700,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Payment Process
+              Introduction
             </div>
           </div>
         </a>
       
       
         
-        <a href="../source-credit/" class="md-footer__link md-footer__link--next" aria-label="Next: Dependencies" rel="next">
+        <a href="../2_setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Setup" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Dependencies
+              Setup
             </div>
           </div>
           <div class="md-footer__button md-icon">
