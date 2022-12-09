@@ -1,0 +1,23 @@
+site_name: Web3Gate Doc
+theme:
+  name: material
+  logo: assets/logos/white.png
+  favicon: assets/logos/default.png
+nav:
+  - Introduction: /
+  - Installation: /installation
+  - Setup: /setup
+  - Payment: /payment
+  - Dependencies: /source-credit
+  - Change Log: /change-log
+  - Error Troubleshoot: /error-troubleshoot
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/_lolaji
+      name: Author Twitter
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/lolaji
+      name: Author LinkedIn
+copyright: Web3Gate - A Blockchain as a Service platform offering crypto launchpad, API, and more.
