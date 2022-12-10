@@ -420,7 +420,7 @@
   
     <li class="md-nav__item">
       <a href="../error-troubleshoot/" class="md-nav__link">
-        Errors & Troubleshooting
+        Troubleshooting
       </a>
     </li>
   
@@ -584,12 +584,12 @@
 
 
 <h1 id="installation">Installation</h1>
-<p>To install the Web3Gate application you will need install the following software on your system</p>
+<p>To install the Web3Gate application, you will need install the following on your system</p>
 <ol>
 <li><a href="https://getcomposer.org/">Composer</a></li>
 </ol>
 <h2 id="downloaded-file-layout">Downloaded File layout</h2>
-<p>This is the layout of your downloaded zip file after decompressed it.</p>
+<p>This is the layout of your downloaded zip file after unzipping it.</p>
 <pre><code>web3gate/
     source-code/     # contain the source code
     Documentation/   # documentation folder
@@ -615,7 +615,7 @@
 <pre><code> $ composer install
 </code></pre>
 <h3 id="create-environment-file">Create environment file</h3>
-<p>Now that you have install all the packages needed, create a .env file at the root of the application and copy the content of the .env.example into .env you have just create. You can use the following command to acheive this:</p>
+<p>Now that you have install all the packages needed, create a .env file at the root of the application and copy the content of the .env.example into the .env file you created. You can use the following command to acheive this:</p>
 <pre><code> $ cp .env.example .env
 </code></pre>
 <h3 id="generate-app-key">Generate app key</h3>
@@ -630,7 +630,7 @@
  APP_URL=https://example.com             # the domain of the server you upload this to (http://localhost if running on your computer)
 
  DB_CONNECTION=mysql                     # pgsql for postgreSQL database
- DB_HOST=127.0.0.1
+ DB_HOST=127.0.0.1                       # Database host
  DB_PORT=3306                            # 5432 for postgreSQL
  DB_DATABASE=database-you-created
  DB_USERNAME=database-username
@@ -647,10 +647,10 @@
 <h4 id="seeding">Seeding</h4>
 <p>Make sure to set the enviroment variable for the super admin as this will be the top level admin that has all the previledges, and you will use it for login.</p>
 <pre><code> ADMIN_USERNAME=your-username
- ADMIN_EMAIL=your-email
- ADMIN_PASSWORD=your-password
+ ADMIN_EMAIL=your-email                  # use for login
+ ADMIN_PASSWORD=your-password            # use for login
 </code></pre>
-<p>then run:</p>
+<p>then seed the database by running the following command:</p>
 <pre><code> $ php artisan db:seed
 </code></pre>
 <h3 id="run-the-app">Run the app</h3>
