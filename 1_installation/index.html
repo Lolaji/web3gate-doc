@@ -228,18 +228,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#downloaded-file-layout" class="md-nav__link">
-    Downloaded File layout
+  <a href="#downloaded-unzipping-the-script" class="md-nav__link">
+    Downloaded &amp; Unzipping the script
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-packages-setup" class="md-nav__link">
-    Installing Packages &amp; Setup
+  <a href="#cpanel-server-setup" class="md-nav__link">
+    CPanel Server Setup
   </a>
   
-    <nav class="md-nav" aria-label="Installing Packages &amp; Setup">
+    <nav class="md-nav" aria-label="CPanel Server Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -250,22 +250,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-packages" class="md-nav__link">
-    Install packages
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-environment-file" class="md-nav__link">
-    Create environment file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-app-key" class="md-nav__link">
-    Generate app key
+  <a href="#copying-the-script-to-your-server" class="md-nav__link">
+    Copying the script to your server
   </a>
   
 </li>
@@ -453,18 +439,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#downloaded-file-layout" class="md-nav__link">
-    Downloaded File layout
+  <a href="#downloaded-unzipping-the-script" class="md-nav__link">
+    Downloaded &amp; Unzipping the script
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-packages-setup" class="md-nav__link">
-    Installing Packages &amp; Setup
+  <a href="#cpanel-server-setup" class="md-nav__link">
+    CPanel Server Setup
   </a>
   
-    <nav class="md-nav" aria-label="Installing Packages &amp; Setup">
+    <nav class="md-nav" aria-label="CPanel Server Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -475,22 +461,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#install-packages" class="md-nav__link">
-    Install packages
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-environment-file" class="md-nav__link">
-    Create environment file
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-app-key" class="md-nav__link">
-    Generate app key
+  <a href="#copying-the-script-to-your-server" class="md-nav__link">
+    Copying the script to your server
   </a>
   
 </li>
@@ -588,14 +560,15 @@
 <ol>
 <li><a href="https://getcomposer.org/">Composer</a></li>
 </ol>
-<h2 id="downloaded-file-layout">Downloaded File layout</h2>
-<p>This is the layout of your downloaded zip file after unzipping it.</p>
+<h2 id="downloaded-unzipping-the-script">Downloaded &amp; Unzipping the script</h2>
+<p>Download the script and unzip the downloaded zip file on your computer. This is the layout of your downloaded zip file after unzipping it.</p>
 <pre><code>web3gate/
     source-code/     # contain the source code
     Documentation/   # documentation folder
 </code></pre>
-<h2 id="installing-packages-setup">Installing Packages &amp; Setup</h2>
+<h2 id="cpanel-server-setup">CPanel Server Setup</h2>
 <h3 id="software-requirements">Software Requirements</h3>
+<p>First, make sure your server meet up with the following PHP extension.</p>
 <pre><code> - PHP 8.0.1 or later
  - OpenSSL PHP Extension
  - PDO PHP Extension
@@ -607,27 +580,21 @@
  - BCMath PHP Extension
  - FileInfo PHP Extension
 </code></pre>
-<h3 id="install-packages">Install packages</h3>
-<p>Open the source-code folder with your terminal and run the following command to installed all the packages needed by this application. Make sure you are in the root directory of the source-code folder.</p>
-<blockquote>
-<p><strong>Note:</strong> you will need to install composer to follow this step.</p>
-</blockquote>
-<pre><code> $ composer install
-</code></pre>
-<h3 id="create-environment-file">Create environment file</h3>
-<p>Now that you have install all the packages needed, create a .env file at the root of the application and copy the content of the .env.example into the .env file you created. You can use the following command to acheive this:</p>
-<pre><code> $ cp .env.example .env
-</code></pre>
-<h3 id="generate-app-key">Generate app key</h3>
-<p>Run the following command to generate app key:</p>
-<pre><code> $ php artisan key:generate
-</code></pre>
+<h3 id="copying-the-script-to-your-server">Copying the script to your server</h3>
+<p>After extracting the downloaded zip file, upload the source_code folder into the public_html folder by following the steps below:</p>
+<ol>
+<li>In your CPanel dashboard, navigate to file manager</li>
+<li>In the list of folder in your file manager, double click on the public_html folder</li>
+<li>In your public_html page on the top of the page, click the upload link</li>
+<li>In the upload page, click select file and select the source_code zip file and upload, or drag and drop the source_code zip file on the upload section. You should wait for it to complete the upload</li>
+<li>After the file is successfully uploaded, go back to the public_html folder and extract the uploaded source_code file into the public_html folder. Make sure the public_html folder is empty.</li>
+</ol>
 <h3 id="configure-the-environment-variable">Configure the environment variable</h3>
-<p>After the .env file has been created, open the .env file and change the value of the following variables</p>
+<p>After the successful upload, In the public_html, find and open the .env file and change the value of the following variables</p>
 <pre><code> APP_NAME=you-app-name-here
  APP_ENV=local                           # development or production
  APP_DEBUG=false                         # true if you want to a display error message
- APP_URL=https://example.com             # the domain of the server you upload this to (http://localhost if running on your computer)
+ APP_URL=https://example.com             # the domain of the server you upload this to
 
  DB_CONNECTION=mysql                     # pgsql for postgreSQL database
  DB_HOST=127.0.0.1                       # Database host
@@ -654,9 +621,7 @@
 <pre><code> $ php artisan db:seed
 </code></pre>
 <h3 id="run-the-app">Run the app</h3>
-<p>You can now run the app by running the following command:</p>
-<pre><code> $ php artisan serve
-</code></pre>
+<p>Then finally, go to your browser and load your website domain</p>
 <h2 id="frontend-setup">Frontend Setup</h2>
 <p>Web3Gate uses <a href="https://vuejs.org/">Vue.js</a> for it frontend and if you would like to make changes to your frontend, you must have <a href="https://nodejs.org/">node.js</a> or <a href="https://yarnpkg.com/">yarn</a> installed on your computer.</p>
 <h3 id="installing-the-node-packages">Installing the node packages</h3>
