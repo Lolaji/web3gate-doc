@@ -272,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3_payment/" class="md-nav__link">
+      <a href="../4_payment/" class="md-nav__link">
         Payment Process
       </a>
     </li>
@@ -287,7 +287,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../4_source-credit/" class="md-nav__link">
+      <a href="../5_source-credit/" class="md-nav__link">
         Dependencies
       </a>
     </li>
@@ -386,30 +386,25 @@
 <blockquote>
 <p><strong>Note</strong>: this software currently supports EVM based blockchain and to intereact with Bitcoin you will have to get a <a href="https://blockchain.com/explorer/api">blockchain API Key</a></p>
 </blockquote>
-<p>We have created a database seeder for some network that you can just seed into your database to safe you some time. To seed this networks, run the following command:</p>
-<pre><code> $ php artisan db:seed --class=NetworkSeeder
-</code></pre>
-<blockquote>
-<p><strong>Note</strong>: if you set your APP_ENV enviroment variable to local or development it will seed a testnet blockchain networks into your database, however, setting it to production will seed mainnet blockchain networks into your database. Except for Bitcoin which will always seed mainnet.</p>
-</blockquote>
-<p>You can also add blockchain manually:</p>
+<p>During the installation process, some blockchain networks are seeded to your database.</p>
+<p>You can also more by following the steps below:</p>
 <ol>
 <li>Login and navigate to the admin panel</li>
-<li>On the sidebar, click blockchain &gt; networks</li>
+<li>On the sidebar, click <code>blockchain &gt; networks</code> navigation link</li>
 <li>There you can perform CRUD operation on the blockchain network.</li>
 </ol>
 <blockquote>
-<p><strong>Note</strong>: Admin user only have access to this module</p>
+<p><strong>Note</strong>: Only, admin user have access to this module</p>
 </blockquote>
 <h2 id="staking-pool-contract-deployment">Staking Pool contract deployment</h2>
-<p>For users to be able to launch a staking pool for their token, you will need to deploy the staking pool smart contract to the blockchain network you have added.</p>
+<p>For users to be able to launch a staking pool for their token, first you will need to deploy the staking pool smart contract to the blockchain network you have added.</p>
 <p>To deploy the smart contract:</p>
 <ol>
 <li>Login and navigate to the admin panel</li>
-<li>On the sidebar, click blockchain &gt; smart contracts</li>
-<li>In the contract page click Add contract button</li>
-<li>In the open  modal connect to your web3 wallet, select the network you are deploying to, select contract type</li>
-<li>And click the Deploy button</li>
+<li>On the sidebar, click <code>blockchain &gt; smart contracts</code> navigation link</li>
+<li>In the contract page click <code>Deploy</code> button</li>
+<li>In the open modal, connect to your web3 wallet by clicking the <code>connect wallet</code> button, select the network you are deploying to, select contract type</li>
+<li>And click the <code>Deploy</code> button</li>
 </ol>
 
 
@@ -447,7 +442,7 @@
       
       
         
-        <a href="../3_payment/" class="md-footer__link md-footer__link--next" aria-label="Next: Payment Process" rel="next">
+        <a href="../4_payment/" class="md-footer__link md-footer__link--next" aria-label="Next: Payment Process" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
