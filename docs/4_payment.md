@@ -1,6 +1,6 @@
 # Payment Process
 
-In this section, you will learn how you can create a payment for your products/services in Web3Gate
+In this section, you will learn how you can create a payment for your products/services in Web3Gate. Web3gate has an API documentation in the app, you can access it by clicking the `Docs` navigation link in the home page.
 
 ## Add Wallet
 

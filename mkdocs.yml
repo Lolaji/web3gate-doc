@@ -3,14 +3,14 @@ theme:
   name: material
   logo: assets/logos/white.png
   favicon: assets/logos/default.png
-nav:
-  - Introduction: /
-  - Installation: /installation
-  - Setup: /setup
-  - Payment: /payment
-  - Dependencies: /source-credit
-  - Change Log: /change-log
-  - Error Troubleshoot: /error-troubleshoot
+# nav:
+#   - Introduction: /
+#   - Installation: /installation
+#   - Setup: /setup
+#   - Payment: /payment
+#   - Dependencies: /source-credit
+#   - Change Log: /change-log
+#   - Error Troubleshoot: /error-troubleshoot
 extra:
   generator: false
   social:
